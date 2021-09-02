@@ -12,7 +12,8 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
   devServer: {
-    historyApiFallback: true
+    historyApiFallback: true,
+    watchFiles: ['src']
   },
   plugins: [new HtmlWebpackPlugin()]
 };
